@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "title": "Blog",
+    "subtitle": "Insights on shipping fast, building smart, and measuring what matters."
+  },
+  "comingSoon": {
+    "title": "More posts coming soon",
+    "subtitle": "We publish practical guides on web development, automation, and AI. Check back regularly for new content."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "webApps": {
+    "hero": {
+      "title": "Lance aplicativos web e sites que geram receita—rapidamente.",
+      "subtitle": "De MVPs e ferramentas internas a sites de marketing de alto desempenho, entregamos em semanas e iteramos com dados.",
+      "cta": "Obtenha um orçamento detalhado",
+      "ctaSecondary": "Ver amostras de trabalho"
+    },
+    "whatWeBuild": {
+      "title": "O Que Construímos",
+      "items": {
+        "webApps": "Aplicativos web personalizados e ferramentas internas",
+        "marketingSites": "Sites de marketing que ranqueiam e convertem",
+        "adminPanels": "Painéis admin e integrações"
+      }
+    },
+    "packages": {
+      "title": "Pacotes",
+      "subtitle": "Opções flexíveis que se adequam ao seu estágio atual e futuro",
+      "launchSprint": {
+        "name": "Sprint de Lançamento",
+        "duration": "2–3 semanas",
+        "description": "Protótipo ou atualização de site; UX + biblioteca de componentes + preview ao vivo."
+      },
+      "mvpBuild": {
+        "name": "Construção de MVP",
+        "duration": "4–8 semanas",
+        "description": "Recursos principais, autenticação, pagamentos/integrações, staging e produção."
+      },
+      "growthCare": {
+        "name": "Cuidado de Crescimento",
+        "duration": "Mensal",
+        "description": "Backlog, testes A/B, performance, recursos pequenos."
+      }
+    },
+    "process": {
+      "title": "Nosso Processo",
+      "subtitle": "Da descoberta à implantação em etapas claras e iterativas",
+      "steps": {
+        "discovery": "Descoberta",
+        "architecture": "Arquitetura",
+        "slices": "Fatias",
+        "qa": "QA & a11y",
+        "launch": "Lançamento",
+        "iterate": "Iterar"
+      }
+    },
+    "outcomes": {
+      "title": "Resultados Mensuráveis",
+      "subtitle": "Métricas reais de projetos reais",
+      "metrics": {
+        "launchTime": {
+          "value": "< 3 semanas",
+          "label": "Tempo médio de lançamento"
+        },
+        "conversion": {
+          "value": "+40%",
+          "label": "Aumento médio de conversão"
+        },
+        "uptime": {
+          "value": "99.9%",
+          "label": "Tempo de atividade"
+        },
+        "lcp": {
+          "value": "< 2.5s",
+          "label": "Meta LCP"
+        }
+      }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Perguntas comuns sobre nossos serviços de desenvolvimento web",
+      "hosting": {
+        "q": "Qual hospedagem você recomenda?",
+        "a": "Normalmente implantamos em Netlify, Vercel ou sua infraestrutura existente. Tudo incluído em nossos pacotes."
+      },
+      "techStack": {
+        "q": "Qual stack de tecnologia você usa?",
+        "a": "React, Next.js, Tailwind, Node.js—ferramentas modernas, performáticas e fáceis de manter."
+      },
+      "seo": {
+        "q": "Vocês cuidam de SEO?",
+        "a": "Sim. Metadados, dados estruturados, otimização de performance e estratégia de conteúdo estão todos incluídos."
+      },
+      "accessibility": {
+        "q": "A acessibilidade está incluída?",
+        "a": "Absolutamente. Conformidade AA+, navegação por teclado e suporte a leitores de tela são padrão."
+      }
+    },
+    "cta": {
+      "title": "Pronto para lançar?",
+      "subtitle": "Obtenha um orçamento detalhado e veja se somos a escolha certa.",
+      "primary": "Obtenha um orçamento detalhado",
+      "secondary": "Ver amostras de trabalho"
+    }
+  },
+  "automation": {
+    "hero": {
+      "title": "Automações que economizam horas. IA que responde do",
+      "titleAccent": "seu",
+      "titleEnd": "conhecimento—com segurança.",
+      "subtitle": "Conectamos suas ferramentas, adicionamos RAG sobre seu conteúdo e direcionamos etapas sensíveis para revisão humana.",
+      "cta": "Agendar chamada de viabilidade",
+      "ctaSecondary": "Ver casos de uso"
+    },
+    "included": {
+      "title": "O Que Está Incluído",
+      "items": {
+        "connectors": "Conectores (Drive, SharePoint, Notion, CRM)",
+        "rag": "Pipeline RAG (chunking, embeddings, guardrails)",
+        "humanReview": "Filas de revisão humana",
+        "analytics": "Analytics (deflexão, tempo de tratamento, precisão)"
+      }
+    },
+    "useCases": {
+      "title": "Casos de Uso",
+      "subtitle": "Aplicações do mundo real que entregam ROI mensurável",
+      "supportAssist": {
+        "title": "Assistência de suporte ao cliente",
+        "description": "Rascunho de respostas com fontes; agente aprova."
+      },
+      "knowledgeSearch": {
+        "title": "Busca de conhecimento de vendas",
+        "description": "Um lugar para consultar decks, preços, notas."
+      },
+      "opsAutomations": {
+        "title": "Automações de operações",
+        "description": "Triagem de caixas de entrada, atualização de CRMs, geração de docs."
+      }
+    },
+    "quality": {
+      "title": "Qualidade e Segurança",
+      "subtitle": "Guardrails e recursos de conformidade integrados",
+      "items": {
+        "citations": {
+          "title": "Citações de fonte",
+          "desc": "Toda resposta vinculada à sua fonte"
+        },
+        "security": {
+          "title": "PII e controles de acesso",
+          "desc": "Segurança de nível empresarial"
+        },
+        "audit": {
+          "title": "Logs de aprovação/auditoria",
+          "desc": "Total transparência e conformidade"
+        }
+      }
+    },
+    "packages": {
+      "title": "Pacotes",
+      "subtitle": "De vitórias rápidas a transformação completa de IA",
+      "starter": {
+        "name": "Starter de Automação",
+        "duration": "2 semanas"
+      },
+      "rag": {
+        "name": "Piloto RAG",
+        "duration": "3–4 semanas"
+      },
+      "care": {
+        "name": "Cuidado de Operações",
+        "duration": "Mensal"
+      }
+    },
+    "cta": {
+      "title": "Vamos explorar o que é possível",
+      "subtitle": "Agende uma chamada de viabilidade ou veja uma demo ao vivo de RAG em ação.",
+      "primary": "Agendar chamada de viabilidade",
+      "secondary": "Ver amostras de trabalho"
+    }
+  }
+}

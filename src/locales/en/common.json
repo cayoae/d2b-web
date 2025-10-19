@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "reviews": "Reviews",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "bookCall": "Book a 20-min call",
+    "getStarted": "Get started",
+    "learnMore": "Learn more",
+    "seeWork": "See work samples",
+    "seeDemo": "See a live demo",
+    "startProject": "Start your project",
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "getEstimate": "Get a scoped estimate"
+  },
+  "footer": {
+    "tagline": "Build what matters. Automate the rest.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "webApps": "Web Apps & Sites",
+    "automation": "Automation & AI",
+    "work": "Work",
+    "reviews": "Reviews",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved."
+  }
+}

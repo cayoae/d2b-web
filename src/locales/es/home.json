@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "title": "Construye lo que importa.",
+    "titleAccent": "Automatiza el resto.",
+    "subtitle": "Entregamos aplicaciones web y sitios rápidamente—luego agregamos automatizaciones de IA con revisión humana para reducir el trabajo rutinario.",
+    "cta": "Reservar llamada de 20 min",
+    "ctaSecondary": "Ver demos en vivo",
+    "stats": {
+      "launch": {
+        "value": "4.2sem",
+        "label": "Lanzamiento promedio"
+      },
+      "uptime": {
+        "value": "99.9%",
+        "label": "Tiempo activo"
+      },
+      "rating": {
+        "value": "5.0★",
+        "label": "Calificación de clientes"
+      }
+    }
+  },
+  "services": {
+    "webApps": {
+      "title": "Aplicaciones Web y Sitios",
+      "description": "Aplicaciones web personalizadas, herramientas internas y sitios rápidos optimizados para SEO.",
+      "features": {
+        "mvp": "MVPs y herramientas internas",
+        "sites": "Sitios de alta conversión",
+        "launch": "Lanzamiento en semanas"
+      },
+      "cta": "Explorar Aplicaciones Web y Sitios"
+    },
+    "automation": {
+      "title": "Automatización e IA (RAG + HIL)",
+      "description": "Automatiza trabajo rutinario; responde desde tus datos con aprobaciones humanas.",
+      "features": {
+        "rag": "RAG sobre docs y CRM",
+        "hil": "Humano en el circuito",
+        "roi": "ROI claro"
+      },
+      "cta": "Explorar Automatización e IA"
+    }
+  },
+  "work": {
+    "title": "Trabajos Destacados",
+    "subtitle": "Resultados reales de proyectos reales",
+    "viewAll": "Ver todos los proyectos",
+    "projects": {
+      "booking": {
+        "title": "App de reservas",
+        "metric": "+32%",
+        "label": "reservas",
+        "time": "5 semanas"
+      },
+      "b2b": {
+        "title": "Renovación de sitio B2B",
+        "metric": "+48%",
+        "label": "envíos de formularios",
+        "time": "3 semanas"
+      },
+      "ai": {
+        "title": "Asistente de conocimiento con IA",
+        "metric": "−40%",
+        "label": "tiempo de manejo",
+        "time": "4 semanas"
+      }
+    }
+  },
+  "process": {
+    "title": "Cómo Trabajamos",
+    "subtitle": "Un proceso probado que entrega resultados en semanas, no meses",
+    "steps": {
+      "scope": {
+        "title": "Alcance rápido",
+        "description": "Llamada de 20 min → plan escrito"
+      },
+      "prototype": {
+        "title": "Prototipo temprano",
+        "description": "Primera demo en semana 1"
+      },
+      "ship": {
+        "title": "Entrega en fragmentos",
+        "description": "Versiones utilizables cada 1-2 semanas"
+      },
+      "operate": {
+        "title": "Operar y mejorar",
+        "description": "Soporte + iteraciones mensuales"
+      }
+    }
+  },
+  "outcomes": {
+    "title": "Resultados, No Tecnología",
+    "items": {
+      "faster": {
+        "title": "Lanzamientos más rápidos",
+        "description": "Menos reuniones, más entregas"
+      },
+      "ownership": {
+        "title": "Responsabilidad clara",
+        "description": "Diseño → desarrollo → alojamiento → soporte"
+      },
+      "results": {
+        "title": "Resultados medibles",
+        "description": "Tiempo ahorrado, leads, tasas de error"
+      }
+    }
+  },
+  "reviews": {
+    "title": "Confiado por Equipos en Crecimiento",
+    "items": {
+      "sarah": {
+        "quote": "Entrega rápida, resultados sólidos. Mejor socio para nuestras necesidades.",
+        "author": "Sarah M.",
+        "role": "Líder de Operaciones"
+      },
+      "john": {
+        "quote": "Redujimos nuestro tiempo de soporte en 40% con el asistente de IA. ROI fue claro.",
+        "author": "John D.",
+        "role": "CEO"
+      },
+      "mike": {
+        "quote": "De la idea al lanzamiento en 4 semanas. Proceso increíblemente fluido.",
+        "author": "Mike R.",
+        "role": "Gerente de Producto"
+      }
+    },
+    "readAll": "Leer todas las reseñas"
+  },
+  "cta": {
+    "title": "Hagamos que tu próximo lanzamiento sea el más fácil hasta ahora.",
+    "subtitle": "Cuéntanos qué quieres lograr; propondremos el camino más rápido hacia una versión funcional.",
+    "primary": "Reservar llamada de 20 min",
+    "secondary": "Enviar mensaje"
+  }
+}

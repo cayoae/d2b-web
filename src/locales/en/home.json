@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "title": "Build what matters.",
+    "titleAccent": "Automate the rest.",
+    "subtitle": "We ship web apps and sites fast—then add AI automations with human review to cut busywork.",
+    "cta": "Book a 20-min call",
+    "ctaSecondary": "See live demos",
+    "stats": {
+      "launch": {
+        "value": "4.2wks",
+        "label": "Avg launch"
+      },
+      "uptime": {
+        "value": "99.9%",
+        "label": "Uptime"
+      },
+      "rating": {
+        "value": "5.0★",
+        "label": "Client rating"
+      }
+    }
+  },
+  "services": {
+    "webApps": {
+      "title": "Web Apps & Sites",
+      "description": "Custom web apps, internal tools, and fast, SEO-ready sites.",
+      "features": {
+        "mvp": "MVPs & internal tools",
+        "sites": "High-converting sites",
+        "launch": "Launch in weeks"
+      },
+      "cta": "Explore Web Apps & Sites"
+    },
+    "automation": {
+      "title": "Automation & AI (RAG + HIL)",
+      "description": "Automate routine work; answer from your data with human approvals.",
+      "features": {
+        "rag": "RAG over docs & CRM",
+        "hil": "Human-in-the-loop",
+        "roi": "Clear ROI"
+      },
+      "cta": "Explore Automation & AI"
+    }
+  },
+  "work": {
+    "title": "Featured Work",
+    "subtitle": "Real results from real projects",
+    "viewAll": "View all projects",
+    "projects": {
+      "booking": {
+        "title": "Booking app",
+        "metric": "+32%",
+        "label": "bookings",
+        "time": "5 weeks"
+      },
+      "b2b": {
+        "title": "B2B site refresh",
+        "metric": "+48%",
+        "label": "form fills",
+        "time": "3 weeks"
+      },
+      "ai": {
+        "title": "AI knowledge assistant",
+        "metric": "−40%",
+        "label": "handling time",
+        "time": "4 weeks"
+      }
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A proven process that delivers results in weeks, not months",
+    "steps": {
+      "scope": {
+        "title": "Scope fast",
+        "description": "20-min call → written plan"
+      },
+      "prototype": {
+        "title": "Prototype early",
+        "description": "First demo in week 1"
+      },
+      "ship": {
+        "title": "Ship in slices",
+        "description": "Usable drops every 1–2 weeks"
+      },
+      "operate": {
+        "title": "Operate & improve",
+        "description": "Support + monthly iterations"
+      }
+    }
+  },
+  "outcomes": {
+    "title": "Outcomes, Not Tech",
+    "items": {
+      "faster": {
+        "title": "Faster launches",
+        "description": "Fewer meetings, more shipping"
+      },
+      "ownership": {
+        "title": "Clear ownership",
+        "description": "Design → build → host → support"
+      },
+      "results": {
+        "title": "Measured results",
+        "description": "Time saved, leads, error rates"
+      }
+    }
+  },
+  "reviews": {
+    "title": "Trusted by Growing Teams",
+    "items": {
+      "sarah": {
+        "quote": "Fast turnaround, solid results. Best partner for our needs.",
+        "author": "Sarah M.",
+        "role": "Operations Lead"
+      },
+      "john": {
+        "quote": "Cut our support time by 40% with their AI assistant. ROI was clear.",
+        "author": "John D.",
+        "role": "CEO"
+      },
+      "mike": {
+        "quote": "From idea to launch in 4 weeks. Incredibly smooth process.",
+        "author": "Mike R.",
+        "role": "Product Manager"
+      }
+    },
+    "readAll": "Read all reviews"
+  },
+  "cta": {
+    "title": "Let's make your next release the easiest yet.",
+    "subtitle": "Tell us what you want to achieve; we'll propose the fastest path to a workable release.",
+    "primary": "Book a 20-min intro",
+    "secondary": "Send a message"
+  }
+}

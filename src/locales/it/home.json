@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "title": "Costruisci ciò che conta.",
+    "titleAccent": "Automatizza il resto.",
+    "subtitle": "Realizziamo app web e siti velocemente—poi aggiungiamo automazioni AI con revisione umana per ridurre il lavoro ripetitivo.",
+    "cta": "Prenota una chiamata di 20 min",
+    "ctaSecondary": "Vedi demo dal vivo",
+    "stats": {
+      "launch": {
+        "value": "4.2sett",
+        "label": "Lancio medio"
+      },
+      "uptime": {
+        "value": "99.9%",
+        "label": "Disponibilità"
+      },
+      "rating": {
+        "value": "5.0★",
+        "label": "Valutazione clienti"
+      }
+    }
+  },
+  "services": {
+    "webApps": {
+      "title": "App Web e Siti",
+      "description": "App web personalizzate, strumenti interni e siti veloci e ottimizzati per SEO.",
+      "features": {
+        "mvp": "MVP e strumenti interni",
+        "sites": "Siti ad alta conversione",
+        "launch": "Lancio in settimane"
+      },
+      "cta": "Esplora App Web e Siti"
+    },
+    "automation": {
+      "title": "Automazione e IA (RAG + HIL)",
+      "description": "Automatizza il lavoro di routine; rispondi dai tuoi dati con approvazioni umane.",
+      "features": {
+        "rag": "RAG su documenti e CRM",
+        "hil": "Umano nel ciclo",
+        "roi": "ROI chiaro"
+      },
+      "cta": "Esplora Automazione e IA"
+    }
+  },
+  "work": {
+    "title": "Lavori in Evidenza",
+    "subtitle": "Risultati reali da progetti reali",
+    "viewAll": "Vedi tutti i progetti",
+    "projects": {
+      "booking": {
+        "title": "App di prenotazione",
+        "metric": "+32%",
+        "label": "prenotazioni",
+        "time": "5 settimane"
+      },
+      "b2b": {
+        "title": "Rinnovo sito B2B",
+        "metric": "+48%",
+        "label": "compilazioni moduli",
+        "time": "3 settimane"
+      },
+      "ai": {
+        "title": "Assistente conoscenza IA",
+        "metric": "−40%",
+        "label": "tempo di gestione",
+        "time": "4 settimane"
+      }
+    }
+  },
+  "process": {
+    "title": "Come Lavoriamo",
+    "subtitle": "Un processo collaudato che offre risultati in settimane, non mesi",
+    "steps": {
+      "scope": {
+        "title": "Ambito veloce",
+        "description": "Chiamata di 20 min → piano scritto"
+      },
+      "prototype": {
+        "title": "Prototipo anticipato",
+        "description": "Prima demo nella settimana 1"
+      },
+      "ship": {
+        "title": "Consegna a fette",
+        "description": "Versioni utilizzabili ogni 1–2 settimane"
+      },
+      "operate": {
+        "title": "Operare e migliorare",
+        "description": "Supporto + iterazioni mensili"
+      }
+    }
+  },
+  "outcomes": {
+    "title": "Risultati, Non Tecnologia",
+    "items": {
+      "faster": {
+        "title": "Lanci più veloci",
+        "description": "Meno riunioni, più consegne"
+      },
+      "ownership": {
+        "title": "Responsabilità chiara",
+        "description": "Design → sviluppo → hosting → supporto"
+      },
+      "results": {
+        "title": "Risultati misurabili",
+        "description": "Tempo risparmiato, lead, tassi di errore"
+      }
+    }
+  },
+  "reviews": {
+    "title": "Di Fiducia per Team in Crescita",
+    "items": {
+      "sarah": {
+        "quote": "Consegna rapida, risultati solidi. Miglior partner per le nostre esigenze.",
+        "author": "Sarah M.",
+        "role": "Responsabile Operazioni"
+      },
+      "john": {
+        "quote": "Ridotto il nostro tempo di supporto del 40% con il loro assistente IA. ROI era chiaro.",
+        "author": "John D.",
+        "role": "CEO"
+      },
+      "mike": {
+        "quote": "Dall'idea al lancio in 4 settimane. Processo incredibilmente fluido.",
+        "author": "Mike R.",
+        "role": "Product Manager"
+      }
+    },
+    "readAll": "Leggi tutte le recensioni"
+  },
+  "cta": {
+    "title": "Rendiamo il tuo prossimo rilascio il più semplice finora.",
+    "subtitle": "Dicci cosa vuoi ottenere; proporremo il percorso più veloce verso una versione funzionante.",
+    "primary": "Prenota una chiamata di 20 min",
+    "secondary": "Invia un messaggio"
+  }
+}

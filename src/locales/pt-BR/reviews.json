@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "title": "Clientes ficam porque os resultados ficam.",
+    "rating": "5.0",
+    "subtitle": "Baseado em 6 projetos concluídos • Lançamento médio: 4,2 semanas"
+  },
+  "allReviews": {
+    "title": "Todas as Avaliações",
+    "subtitle": "Ouça de empresas que ajudamos a transformar"
+  },
+  "stats": {
+    "satisfaction": {
+      "metric": "100%",
+      "label": "Satisfação do cliente"
+    },
+    "delivery": {
+      "metric": "4,2 sem",
+      "label": "Entrega média"
+    },
+    "projects": {
+      "metric": "6",
+      "label": "Projetos concluídos"
+    }
+  },
+  "cta": {
+    "title": "Junte-se aos nossos clientes satisfeitos",
+    "subtitle": "Vamos discutir seu projeto e ver como podemos ajudá-lo a alcançar resultados semelhantes."
+  }
+}

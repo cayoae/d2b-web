@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data2Business - Transform Data Into Business Value</title>
+  <style>
+    /* Reset & Base Styles - Stytch Inspired */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* Stytch-inspired Color Palette */
+      --color-black: #1D1D1D;
+      --color-white: #FBFAF9;
+      --color-lime: #D4FF00;
+      --color-lime-hover: #E6FD13;
+      --color-gray-border: #CECECE;
+      --color-gray-light: #F5F5F5;
+      --color-blue-gray: #B2D6DE;
+
+      /* Spacing System */
+      --space-xs: 8px;
+      --space-sm: 16px;
+      --space-md: 24px;
+      --space-lg: 32px;
+      --space-xl: 48px;
+      --space-2xl: 64px;
+      --space-3xl: 96px;
+
+      /* Typography */
+      --font-mono: 'Courier New', Courier, monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-white);
+      color: var(--color-black);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Typography System */
+    .mono {
+      font-family: var(--font-mono);
+      letter-spacing: -0.02em;
+    }
+
+    .heading-hero {
+      font-size: clamp(3rem, 7vw, 6rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .heading-xl {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .heading-lg {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .heading-md {
+      font-size: clamp(1.25rem, 2vw, 1.75rem);
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .body-lg {
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      line-height: 1.6;
+    }
+
+    .body-sm {
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+
+    /* Header - Minimalist, high contrast */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: var(--color-white);
+      border-bottom: 1px solid var(--color-gray-border);
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      background: rgba(251, 250, 249, 0.95);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-md) 0;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-black);
+      text-decoration: none;
+      font-family: var(--font-mono);
+    }
+
+    .nav {
+      display: flex;
+      gap: var(--space-lg);
+      align-items: center;
+    }
+
+    .nav-link {
+      color: var(--color-black);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: var(--font-mono);
+    }
+
+    .nav-link:hover {
+      color: var(--color-lime-hover);
+    }
+
+    /* Button System - Stytch style */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      padding: 12px 20px;
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-primary {
+      background: var(--color-black);
+      color: var(--color-white);
+      border-color: var(--color-black);
+    }
+
+    .btn-primary:hover {
+      background: var(--color-lime);
+      color: var(--color-black);
+      border-color: var(--color-lime);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-black);
+      border-color: var(--color-gray-border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-black);
+      color: var(--color-white);
+      border-color: var(--color-black);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding-top: calc(80px + var(--space-3xl));
+      padding-bottom: var(--space-3xl);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--color-gray-border);
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero-label {
+      display: inline-block;
+      padding: var(--space-xs) var(--space-sm);
+      background: var(--color-black);
+      color: var(--color-lime);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-md);
+      border-radius: 2px;
+    }
+
+    .hero-title {
+      margin-bottom: var(--space-md);
+    }
+
+    .hero-subtitle {
+      color: #666;
+      margin-bottom: var(--space-xl);
+      max-width: 700px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+    }
+
+    .hero-stats {
+      margin-top: var(--space-2xl);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--space-lg);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--color-gray-border);
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+
+    .stat-value {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1;
+      font-family: var(--font-mono);
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: #666;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Features Grid */
+    .features {
+      padding: var(--space-3xl) 0;
+      border-bottom: 1px solid var(--color-gray-border);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #666;
+      margin-bottom: var(--space-sm);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1px;
+      background: var(--color-gray-border);
+      border: 1px solid var(--color-gray-border);
+    }
+
+    .feature-card {
+      background: var(--color-white);
+      padding: var(--space-xl);
+      transition: background 300ms ease;
+    }
+
+    .feature-card:hover {
+      background: var(--color-gray-light);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: var(--space-md);
+      font-size: 2rem;
+    }
+
+    .feature-title {
+      margin-bottom: var(--space-sm);
+    }
+
+    .feature-description {
+      color: #666;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    /* Services Section */
+    .services {
+      padding: var(--space-3xl) 0;
+      background: var(--color-black);
+      color: var(--color-white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: var(--space-lg);
+    }
+
+    .service-card {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: var(--space-xl);
+      transition: all 300ms ease;
+    }
+
+    .service-card:hover {
+      border-color: var(--color-lime);
+      background: rgba(212, 255, 0, 0.05);
+    }
+
+    .service-number {
+      font-family: var(--font-mono);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--color-lime);
+      line-height: 1;
+      margin-bottom: var(--space-md);
+    }
+
+    .service-features {
+      list-style: none;
+      margin-top: var(--space-md);
+    }
+
+    .service-features li {
+      padding: var(--space-xs) 0;
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.7);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .service-features li:before {
+      content: "→ ";
+      color: var(--color-lime);
+      margin-right: var(--space-xs);
+    }
+
+    /* Process Section */
+    .process {
+      padding: var(--space-3xl) 0;
+      border-bottom: 1px solid var(--color-gray-border);
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-lg);
+      margin-top: var(--space-2xl);
+    }
+
+    .step {
+      position: relative;
+      padding: var(--space-xl);
+      border: 1px solid var(--color-gray-border);
+      background: var(--color-white);
+      transition: all 300ms ease;
+    }
+
+    .step:hover {
+      border-color: var(--color-black);
+      transform: translateY(-4px);
+    }
+
+    .step-number {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-lime);
+      background: var(--color-black);
+      padding: var(--space-xs) var(--space-sm);
+      display: inline-block;
+      margin-bottom: var(--space-md);
+    }
+
+    .step-title {
+      margin-bottom: var(--space-sm);
+    }
+
+    .step-description {
+      color: #666;
+      font-size: 0.9375rem;
+    }
+
+    /* CTA Section */
+    .cta {
+      padding: var(--space-3xl) 0;
+      text-align: center;
+      background: var(--color-lime);
+    }
+
+    .cta-title {
+      margin-bottom: var(--space-md);
+    }
+
+    .cta-subtitle {
+      color: #333;
+      margin-bottom: var(--space-xl);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta .btn-primary {
+      background: var(--color-black);
+      color: var(--color-white);
+    }
+
+    .cta .btn-primary:hover {
+      background: var(--color-white);
+      color: var(--color-black);
+    }
+
+    /* Footer */
+    .footer {
+      padding: var(--space-2xl) 0;
+      border-top: 1px solid var(--color-gray-border);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-xl);
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-title {
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: var(--space-md);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: var(--space-xs);
+    }
+
+    .footer-links a {
+      color: #666;
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 200ms ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-black);
+    }
+
+    .footer-bottom {
+      margin-top: var(--space-xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--color-gray-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #666;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav {
+        display: none;
+      }
+
+      .hero {
+        padding-top: calc(80px + var(--space-xl));
+        padding-bottom: var(--space-xl);
+      }
+
+      .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .features-grid,
+      .services-grid,
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-sm);
+      }
+    }
+
+    /* Utility Classes */
+    .text-center {
+      text-align: center;
+    }
+
+    .mb-sm { margin-bottom: var(--space-sm); }
+    .mb-md { margin-bottom: var(--space-md); }
+    .mb-lg { margin-bottom: var(--space-lg); }
+    .mb-xl { margin-bottom: var(--space-xl); }
+
+    /* Arrow animation */
+    @keyframes arrow-slide {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(4px); }
+    }
+
+    .btn:hover .arrow {
+      animation: arrow-slide 600ms ease infinite;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo">DATA2BUSINESS</a>
+        <nav class="nav">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#contact" class="btn btn-primary">Start Project</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-label">Digital Solutions & AI Automation</div>
+        <h1 class="heading-hero hero-title">
+          Transform Data Into<br>
+          Business Value
+        </h1>
+        <p class="body-lg hero-subtitle">
+          We build high-performance web applications, intelligent automation systems, and data-driven solutions that scale with your business. Ship faster, operate smarter.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            Get Started
+            <span class="arrow">→</span>
+          </a>
+          <a href="#work" class="btn btn-secondary">
+            View Our Work
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-value">4.2</div>
+            <div class="stat-label">Weeks Avg Launch</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">99.9%</div>
+            <div class="stat-label">Uptime SLA</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">3x</div>
+            <div class="stat-label">Avg ROI Year 1</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">−70%</div>
+            <div class="stat-label">Manual Work</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Technical Excellence</div>
+        <h2 class="heading-xl">Built for Scale, Designed for Speed</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="heading-md feature-title">Rapid Development</h3>
+          <p class="feature-description">
+            From MVP to production in 4-6 weeks using modern frameworks and proven architectures.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="heading-md feature-title">Security First</h3>
+          <p class="feature-description">
+            Enterprise-grade security, GDPR compliance, and regular penetration testing.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="heading-md feature-title">Data-Driven</h3>
+          <p class="feature-description">
+            Real-time analytics, custom dashboards, and automated reporting systems.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3 class="heading-md feature-title">AI-Powered</h3>
+          <p class="feature-description">
+            RAG systems, workflow automation, and intelligent document processing.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3 class="heading-md feature-title">Scalable Infrastructure</h3>
+          <p class="feature-description">
+            Cloud-native architecture that grows with your business needs.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="heading-md feature-title">Conversion Optimized</h3>
+          <p class="feature-description">
+            User-centric design with A/B testing and performance monitoring.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" style="color: rgba(255,255,255,0.6);">What We Build</div>
+        <h2 class="heading-xl" style="color: white;">End-to-End Digital Solutions</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-number">01</div>
+          <h3 class="heading-lg mb-md">Web Applications & Sites</h3>
+          <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">
+            Full-stack development from concept to deployment. Modern, responsive, and built to perform.
+          </p>
+          <ul class="service-features">
+            <li>Custom web applications</li>
+            <li>Progressive web apps (PWA)</li>
+            <li>E-commerce platforms</li>
+            <li>Corporate websites & landing pages</li>
+            <li>API development & integration</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">02</div>
+          <h3 class="heading-lg mb-md">AI & Automation</h3>
+          <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">
+            Intelligent systems that reduce manual work and accelerate decision-making.
+          </p>
+          <ul class="service-features">
+            <li>RAG systems & knowledge bases</li>
+            <li>Workflow automation</li>
+            <li>Document processing (OCR/NLP)</li>
+            <li>Predictive analytics</li>
+            <li>Chatbots & virtual assistants</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">03</div>
+          <h3 class="heading-lg mb-md">Data Engineering</h3>
+          <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">
+            Transform raw data into actionable insights with robust pipelines and analytics.
+          </p>
+          <ul class="service-features">
+            <li>ETL pipeline development</li>
+            <li>Data warehouse architecture</li>
+            <li>Real-time analytics dashboards</li>
+            <li>Business intelligence (BI)</li>
+            <li>Data lake implementation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Our Methodology</div>
+        <h2 class="heading-xl">Agile Development, Proven Results</h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">STEP 01</div>
+          <h3 class="heading-md step-title">Discovery & Scope</h3>
+          <p class="step-description">
+            Deep dive into your business goals, technical requirements, and success metrics. Fixed-price proposal in 48 hours.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">STEP 02</div>
+          <h3 class="heading-md step-title">Design & Prototype</h3>
+          <p class="step-description">
+            Interactive prototypes and technical architecture review. Validate before we build.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">STEP 03</div>
+          <h3 class="heading-md step-title">Build & Ship</h3>
+          <p class="step-description">
+            Sprint-based development with weekly demos. Continuous integration and automated testing.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">STEP 04</div>
+          <h3 class="heading-md step-title">Launch & Optimize</h3>
+          <p class="step-description">
+            Deployment, monitoring, and 30-day post-launch support. Ongoing maintenance available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <h2 class="heading-xl cta-title">Ready to Transform Your Business?</h2>
+      <p class="body-lg cta-subtitle">
+        Get a free technical consultation and project estimate. No commitment required.
+      </p>
+      <a href="mailto:hello@data2business.com" class="btn btn-primary">
+        Start Your Project
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-title">Data2Business</div>
+          <p class="body-sm" style="color: #666; max-width: 300px;">
+            Digital solutions and AI automation for forward-thinking businesses.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <div class="footer-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#services">Web Applications</a></li>
+            <li><a href="#services">AI & Automation</a></li>
+            <li><a href="#services">Data Engineering</a></li>
+            <li><a href="#process">Our Process</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <div class="footer-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <div class="footer-title">Legal</div>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2025 Data2Business. All rights reserved.</div>
+        <div>Built with modern web standards</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Header scroll effect
+    let lastScroll = 0;
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > 100) {
+        header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.05)';
+      } else {
+        header.style.boxShadow = 'none';
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+{
+  "webApps": {
+    "hero": {
+      "title": "Launch web apps and sites that drive revenue—fast.",
+      "subtitle": "From MVPs and internal tools to high-performing marketing sites, we ship in weeks and iterate with data."
+    },
+    "whatWeBuild": {
+      "title": "What We Build",
+      "items": {
+        "apps": "Custom web apps & internal tools",
+        "sites": "Marketing sites that rank and convert",
+        "admin": "Admin panels & integrations"
+      }
+    },
+    "packages": {
+      "title": "Packages",
+      "subtitle": "Flexible options that match where you are and where you're headed",
+      "sprint": {
+        "name": "Launch Sprint",
+        "duration": "2–3 weeks",
+        "description": "Prototype or site refresh; UX + component library + live preview."
+      },
+      "mvp": {
+        "name": "MVP Build",
+        "duration": "4–8 weeks",
+        "description": "Core features, auth, payments/integrations, staging & prod."
+      },
+      "growth": {
+        "name": "Growth Care",
+        "duration": "Monthly",
+        "description": "Backlog, A/B tests, performance, small features."
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "From discovery to deployment in clear, iterative steps",
+      "steps": ["Discovery", "Architecture", "Slices", "QA & a11y", "Launch", "Iterate"]
+    },
+    "outcomes": {
+      "title": "Measured Outcomes",
+      "subtitle": "Real metrics from real projects",
+      "metrics": {
+        "launch": "< 3 weeks",
+        "launchLabel": "Average launch time",
+        "conversion": "+40%",
+        "conversionLabel": "Avg conversion lift",
+        "uptime": "99.9%",
+        "uptimeLabel": "Uptime",
+        "lcp": "< 2.5s",
+        "lcpLabel": "LCP target"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Common questions about our web development services",
+      "items": {
+        "hosting": {
+          "q": "What hosting do you recommend?",
+          "a": "We typically deploy on Netlify, Vercel, or your existing infrastructure. All included in our packages."
+        },
+        "stack": {
+          "q": "What tech stack do you use?",
+          "a": "React, Next.js, Tailwind, Node.js—modern, performant tools that are easy to maintain."
+        },
+        "seo": {
+          "q": "Do you handle SEO?",
+          "a": "Yes. Metadata, structured data, performance optimization, and content strategy are all included."
+        },
+        "accessibility": {
+          "q": "Is accessibility included?",
+          "a": "Absolutely. AA+ compliance, keyboard navigation, and screen reader support are standard."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to launch?",
+      "subtitle": "Get a scoped estimate and see if we're the right fit."
+    }
+  },
+  "automation": {
+    "hero": {
+      "title": "Automations that save hours. AI that answers from ",
+      "titleAccent": "your",
+      "titleEnd": " knowledge—safely.",
+      "subtitle": "We connect your tools, add RAG over your content, and route sensitive steps through human review."
+    },
+    "included": {
+      "title": "What's Included",
+      "items": {
+        "connectors": "Connectors (Drive, SharePoint, Notion, CRM)",
+        "rag": "RAG pipeline (chunking, embeddings, guardrails)",
+        "review": "Human review queues",
+        "analytics": "Analytics (deflection, handling time, accuracy)"
+      }
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "subtitle": "Real-world applications that deliver measurable ROI",
+      "support": {
+        "title": "Customer support assist",
+        "description": "Draft answers with sources; agent approves."
+      },
+      "sales": {
+        "title": "Sales knowledge search",
+        "description": "One place to query decks, pricing, notes."
+      },
+      "ops": {
+        "title": "Ops automations",
+        "description": "Triage inboxes, update CRMs, generate docs."
+      }
+    },
+    "quality": {
+      "title": "Quality & Safety",
+      "subtitle": "Built-in guardrails and compliance features",
+      "citations": {
+        "title": "Source citations",
+        "description": "Every answer linked to its source"
+      },
+      "pii": {
+        "title": "PII & access controls",
+        "description": "Enterprise-grade security"
+      },
+      "audit": {
+        "title": "Approval/audit logs",
+        "description": "Full transparency and compliance"
+      }
+    },
+    "packages": {
+      "title": "Packages",
+      "subtitle": "From quick wins to full-scale AI transformation",
+      "starter": {
+        "name": "Automation Starter",
+        "duration": "2 weeks"
+      },
+      "rag": {
+        "name": "RAG Pilot",
+        "duration": "3–4 weeks"
+      },
+      "care": {
+        "name": "Operations Care",
+        "duration": "Monthly"
+      }
+    },
+    "cta": {
+      "title": "Let's explore what's possible",
+      "subtitle": "Book a feasibility call or see a live demo of RAG in action."
+    }
+  }
+}

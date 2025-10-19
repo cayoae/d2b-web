@@ -1,0 +1,175 @@
+{
+  "version": "1.0",
+  "project": "Data2Business Website",
+  "permissions": {
+    "description": "Tools that Claude has permission to use WITHOUT asking for approval",
+    "lastUpdated": "2025-10-05",
+
+    "allowed_tools": [
+      "Grep",
+      "Glob",
+      "Read",
+      "Edit",
+      "MultiEdit",
+      "Write",
+      "NotebookEdit",
+      "WebFetch",
+      "TodoWrite",
+      "WebSearch",
+      "BashOutput",
+      "KillBash",
+      "ListMcpResourcesTool",
+      "ReadMcpResourceTool",
+      "Bash"
+    ],
+
+    "allowed_bash_commands": {
+      "description": "Specific bash commands allowed without approval",
+      "commands": [
+        "npm install",
+        "npm install *",
+        "npm uninstall *",
+        "npm run dev",
+        "npm run build",
+        "npm run preview",
+        "npm create *",
+        "npx *",
+        "git status",
+        "git diff",
+        "git log",
+        "git add *",
+        "git commit *",
+        "git push",
+        "ls",
+        "cat *",
+        "mkdir *",
+        "touch *",
+        "rm *",
+        "cp *",
+        "mv *",
+        "node *",
+        "echo *",
+        "cd *"
+      ]
+    },
+
+    "allowed_mcp_tools": {
+      "description": "MCP (Model Context Protocol) tools with permission",
+      "tools": [
+        "mcp__context7__resolve-library-id",
+        "mcp__context7__get-library-docs",
+        "mcp__playwright__browser_close",
+        "mcp__playwright__browser_resize",
+        "mcp__playwright__browser_console_messages",
+        "mcp__playwright__browser_handle_dialog",
+        "mcp__playwright__browser_evaluate",
+        "mcp__playwright__browser_file_upload",
+        "mcp__playwright__browser_install",
+        "mcp__playwright__browser_press_key",
+        "mcp__playwright__browser_type",
+        "mcp__playwright__browser_navigate",
+        "mcp__playwright__browser_navigate_back",
+        "mcp__playwright__browser_navigate_forward",
+        "mcp__playwright__browser_network_requests",
+        "mcp__playwright__browser_take_screenshot",
+        "mcp__playwright__browser_snapshot",
+        "mcp__playwright__browser_click",
+        "mcp__playwright__browser_drag",
+        "mcp__playwright__browser_hover",
+        "mcp__playwright__browser_select_option",
+        "mcp__playwright__browser_tab_list",
+        "mcp__playwright__browser_tab_new",
+        "mcp__playwright__browser_tab_select",
+        "mcp__playwright__browser_tab_close",
+        "mcp__playwright__browser_wait_for"
+      ]
+    },
+
+    "restricted_actions": {
+      "description": "Actions that REQUIRE user approval",
+      "actions": [
+        "Deleting entire directories (rm -rf)",
+        "Modifying package.json dependencies manually",
+        "Git force push (git push --force)",
+        "Git reset --hard",
+        "Changing environment variables",
+        "Modifying .env files",
+        "Database operations",
+        "Deployment to production",
+        "Domain/DNS changes",
+        "Payment/billing operations"
+      ]
+    },
+
+    "auto_approve": {
+      "description": "Scenarios where Claude can proceed without asking",
+      "scenarios": [
+        "Reading any file in the project",
+        "Creating/editing React components",
+        "Creating/editing CSS/Tailwind styles",
+        "Installing npm packages for development",
+        "Running dev server",
+        "Building production version",
+        "Creating documentation files",
+        "Git commits (with proper messages)",
+        "Searching code/files",
+        "Creating translation files",
+        "UI/UX improvements",
+        "Bug fixes",
+        "Performance optimizations"
+      ]
+    },
+
+    "file_permissions": {
+      "can_read": "**/*",
+      "can_write": [
+        "src/**/*",
+        "public/**/*",
+        "*.md",
+        "*.json",
+        "*.jsx",
+        "*.js",
+        "*.css",
+        "*.html",
+        "*.toml"
+      ],
+      "cannot_modify": [
+        ".git/**",
+        "node_modules/**",
+        "dist/**",
+        "build/**",
+        ".env.production"
+      ]
+    },
+
+    "git_permissions": {
+      "can_commit": true,
+      "can_push": true,
+      "can_create_branches": true,
+      "cannot_force_push_to": ["main", "master", "production"],
+      "commit_message_format": "Conventional Commits (feat:, fix:, docs:, etc.)"
+    },
+
+    "deployment_permissions": {
+      "can_build": true,
+      "can_deploy_preview": true,
+      "can_deploy_production": false,
+      "note": "Production deployment requires user confirmation"
+    }
+  },
+
+  "notes": [
+    "This file grants Claude Code permission to use specified tools without asking",
+    "User can revoke permissions at any time by editing this file",
+    "Claude will check this file before asking for tool approval",
+    "Destructive operations still require explicit confirmation"
+  ],
+
+  "user_preferences": {
+    "verbosity": "concise",
+    "ask_before_major_refactors": true,
+    "auto_commit": false,
+    "auto_push": false,
+    "preferred_language": "pt-BR"
+  }
+}

@@ -1,0 +1,773 @@
+PROMPT FOR GOOGLE STITCH - DATA2BUSINESS WEBSITE
+
+=== PROJECT OVERVIEW ===
+Create a modern, technical, and minimalist 5-page website for Data2Business, a digital solutions company specializing in web applications, AI automation, and data engineering. The design should follow a Stytch-inspired aesthetic with high contrast, clean typography, and a professional technical feel.
+
+=== VISUAL IDENTITY & DESIGN SYSTEM ===
+
+COLOR PALETTE:
+- Primary Black: #1D1D1D (main text, backgrounds, borders)
+- Off-White: #FBFAF9 (page backgrounds, light sections)
+- Accent Lime: #D4FF00 (primary CTAs, highlights, hover states)
+- Lime Hover: #E6FD13 (interactive states)
+- Gray Border: #CECECE (dividers, card borders)
+- Light Gray: #F5F5F5 (subtle backgrounds)
+- Blue-Gray: #B2D6DE (secondary accents, overlays)
+- Medium Gray: #666666 (secondary text)
+
+TYPOGRAPHY SYSTEM:
+- Primary Font: System sans-serif stack (SF Pro, Segoe UI, Roboto)
+- Monospace Font: "JetBrains Mono" or "IBM Plex Mono" for technical elements, labels, buttons, navigation
+- Hero Heading: 72-96px, weight 700, line-height 1.0, letter-spacing -2%
+- Section Heading: 48-56px, weight 700, line-height 1.1, letter-spacing -1.5%
+- Subsection Heading: 32-40px, weight 600, line-height 1.2
+- Body Large: 18-20px, weight 400, line-height 1.6
+- Body Regular: 16px, weight 400, line-height 1.6
+- Small Text: 14px, weight 400, line-height 1.5
+- Labels/Tags: 11-12px uppercase, monospace, weight 600, letter-spacing 5%
+
+SPACING SYSTEM:
+- Base unit: 8px
+- Spacing scale: 8px, 16px, 24px, 32px, 40px, 48px, 64px, 96px, 128px
+- Section padding: 96px top/bottom on desktop, 64px on tablet, 48px on mobile
+- Container max-width: 1400px
+- Grid gaps: 24px default, 32px for larger cards
+
+ICON SYSTEM:
+- Style: Outline/stroke-based icons, NOT filled
+- Stroke width: 2px consistent
+- Size: 24x24px for inline, 32x32px for feature cards, 48x48px for service sections
+- Corner radius: Sharp or minimal (2px max)
+- Icon library style: Similar to Feather Icons, Heroicons Outline, or Lucide Icons
+- Color: Inherit from parent (black on light backgrounds, white on dark, lime for accents)
+
+COMPONENT STYLES:
+
+Buttons:
+- Primary: Black background, white text, 1px black border, 12px padding vertical, 20px horizontal
+- Primary Hover: Lime background, black text
+- Secondary: Transparent background, black text, 1px gray border
+- Secondary Hover: Black background, white text
+- Font: Monospace, 14px, weight 600
+- Border radius: 4px
+- Transition: 300ms cubic-bezier(0.4, 0, 0.2, 1)
+- Include right arrow (→) character in button text
+
+Cards:
+- Border: 1px solid #CECECE
+- Background: White
+- Padding: 32-48px
+- Border radius: 0px (sharp corners) or 2px maximum
+- Hover: Subtle lift (translateY -4px), border color change to black
+- Shadow on hover: 0 8px 24px rgba(0,0,0,0.08)
+
+Grid Layouts:
+- Use 1px borders to create grid dividers (Stytch signature style)
+- Background color on container: #CECECE
+- Grid gap: 1px
+- Each cell has white background
+
+Section Labels:
+- Font: Monospace, 11px, uppercase, weight 600, letter-spacing 10%
+- Color: #666666
+- Placed above section headings
+- Padding: 8px 12px
+- Optional: Black background with lime text for emphasis
+
+=== PAGE 1: HOMEPAGE ===
+
+HEADER (Fixed):
+- Height: 80px
+- Background: Semi-transparent white (rgba(251, 250, 249, 0.95)) with backdrop blur
+- Border bottom: 1px solid #CECECE
+- Logo: "DATA2BUSINESS" in monospace font, 20px, black, left-aligned
+- Navigation (right-aligned): "Services", "Process", "Work", "About", "Contact" in monospace 14px
+- CTA Button: "Start Project" (primary button style)
+- Add subtle shadow when scrolled: 0 2px 8px rgba(0,0,0,0.05)
+
+HERO SECTION:
+Layout:
+- Full viewport height minimum
+- Padding top: 160px (to clear fixed header)
+- Single column, left-aligned content, max-width 900px
+- Background: Off-white (#FBFAF9)
+
+Content:
+- Label tag: "DIGITAL SOLUTIONS & AI AUTOMATION" (monospace, black bg, lime text, 11px uppercase)
+- Main headline: "Transform Data Into Business Value" (96px, weight 700, line-height 1.0)
+  Break line after "Into"
+- Subheadline: "We build high-performance web applications, intelligent automation systems, and data-driven solutions that scale with your business. Ship faster, operate smarter." (20px, color #666, max-width 700px)
+- Button group (24px gap):
+  - "Get Started →" (primary)
+  - "View Our Work →" (secondary)
+
+Stats Grid (below buttons):
+- Margin top: 64px
+- Border top: 1px solid #CECECE, padding top 48px
+- 4 columns on desktop, 2 on tablet/mobile
+- Each stat:
+  - Value: 64px monospace, weight 700 (e.g., "4.2", "99.9%", "3x", "−70%")
+  - Label: 12px monospace uppercase, #666 (e.g., "WEEKS AVG LAUNCH", "UPTIME SLA", "AVG ROI YEAR 1", "MANUAL WORK")
+
+FEATURES SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: White
+- Border bottom: 1px solid #CECECE
+
+Content:
+- Section label: "TECHNICAL EXCELLENCE" (centered, gray)
+- Heading: "Built for Scale, Designed for Speed" (56px, centered)
+- Margin bottom: 64px
+
+Features Grid:
+- 3 columns desktop, 2 tablet, 1 mobile
+- Grid gap: 1px
+- Grid background: #CECECE
+- Grid border: 1px solid #CECECE
+- Each card: White background, 48px padding
+
+6 Feature Cards:
+1. "Rapid Development"
+   - Icon: Lightning bolt (outline, 32x32px)
+   - Text: "From MVP to production in 4-6 weeks using modern frameworks and proven architectures."
+
+2. "Security First"
+   - Icon: Shield with checkmark (outline, 32x32px)
+   - Text: "Enterprise-grade security, GDPR compliance, and regular penetration testing."
+
+3. "Data-Driven"
+   - Icon: Bar chart/analytics (outline, 32x32px)
+   - Text: "Real-time analytics, custom dashboards, and automated reporting systems."
+
+4. "AI-Powered"
+   - Icon: Sparkles/stars or chip/processor (outline, 32x32px)
+   - Text: "RAG systems, workflow automation, and intelligent document processing."
+
+5. "Scalable Infrastructure"
+   - Icon: Trending up arrow or server stack (outline, 32x32px)
+   - Text: "Cloud-native architecture that grows with your business needs."
+
+6. "Conversion Optimized"
+   - Icon: Target/bullseye (outline, 32x32px)
+   - Text: "User-centric design with A/B testing and performance monitoring."
+
+SERVICES SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: Black (#1D1D1D)
+- Color: White text
+
+Content:
+- Section label: "WHAT WE BUILD" (centered, rgba(255,255,255,0.6))
+- Heading: "End-to-End Digital Solutions" (56px, white, centered)
+- Margin bottom: 64px
+
+Services Grid:
+- 3 columns desktop, 1 column mobile
+- Gap: 32px
+- Each card: 1px border rgba(255,255,255,0.2), padding 48px
+- Hover: Border changes to lime, subtle lime background tint rgba(212,255,0,0.05)
+
+3 Service Cards:
+
+1. "Web Applications & Sites"
+   - Number: "01" (72px monospace, lime, weight 700)
+   - Title: "Web Applications & Sites" (40px, white)
+   - Description: "Full-stack development from concept to deployment. Modern, responsive, and built to perform."
+   - Feature list (monospace 14px, rgba(255,255,255,0.7), each prefixed with "→ " in lime):
+     • Custom web applications
+     • Progressive web apps (PWA)
+     • E-commerce platforms
+     • Corporate websites & landing pages
+     • API development & integration
+
+2. "AI & Automation"
+   - Number: "02" (72px monospace, lime, weight 700)
+   - Title: "AI & Automation" (40px, white)
+   - Description: "Intelligent systems that reduce manual work and accelerate decision-making."
+   - Feature list:
+     • RAG systems & knowledge bases
+     • Workflow automation
+     • Document processing (OCR/NLP)
+     • Predictive analytics
+     • Chatbots & virtual assistants
+
+3. "Data Engineering"
+   - Number: "03" (72px monospace, lime, weight 700)
+   - Title: "Data Engineering" (40px, white)
+   - Description: "Transform raw data into actionable insights with robust pipelines and analytics."
+   - Feature list:
+     • ETL pipeline development
+     • Data warehouse architecture
+     • Real-time analytics dashboards
+     • Business intelligence (BI)
+     • Data lake implementation
+
+CTA SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: Lime (#D4FF00)
+- Text centered
+
+Content:
+- Heading: "Ready to Transform Your Business?" (56px, black)
+- Subheading: "Get a free technical consultation and project estimate. No commitment required." (20px, #333333, max-width 600px, centered)
+- Button: "Start Your Project →" (primary style but inverted: black bg, white text, hover to white bg black text)
+
+FOOTER:
+Layout:
+- Padding: 64px vertical
+- Background: White
+- Border top: 1px solid #CECECE
+
+Content Grid:
+- 4 columns desktop, 2 tablet, 1 mobile
+- Gap: 48px
+
+Column 1 - Brand:
+- "DATA2BUSINESS" (monospace, 14px, weight 700, uppercase)
+- Tagline: "Digital solutions and AI automation for forward-thinking businesses." (14px, #666)
+
+Column 2 - Services:
+- Title: "SERVICES" (monospace, 12px, weight 700)
+- Links: Web Applications, AI & Automation, Data Engineering, Our Process
+
+Column 3 - Company:
+- Title: "COMPANY" (monospace, 12px, weight 700)
+- Links: Work, About, Contact, Careers
+
+Column 4 - Legal:
+- Title: "LEGAL" (monospace, 12px, weight 700)
+- Links: Privacy Policy, Terms of Service, Cookie Policy
+
+Footer Bottom:
+- Border top: 1px solid #CECECE, margin top 48px, padding top 48px
+- Left: "© 2025 Data2Business. All rights reserved." (monospace 12px, #666)
+- Right: "Built with modern web standards" (monospace 12px, #666)
+
+=== PAGE 2: SERVICES ===
+
+HEADER: Same as homepage
+
+HERO SECTION:
+Layout:
+- Padding: 160px top, 96px bottom
+- Background: White
+- Border bottom: 1px solid #CECECE
+
+Content:
+- Breadcrumb: "Home / Services" (monospace 12px, #666)
+- Label: "OUR SERVICES" (black bg, lime text)
+- Headline: "Full-Stack Development & Intelligent Automation" (72px)
+- Subheadline: "We deliver end-to-end solutions that combine technical excellence with business impact. Fixed-price projects, transparent timelines, measurable results." (20px, #666, max-width 800px)
+
+DETAILED SERVICES SECTION:
+
+Service 1: Web Applications & Sites
+Layout:
+- Padding: 96px vertical
+- Background: Off-white (#FBFAF9)
+- 2-column grid (60/40 split desktop, stack mobile)
+
+Left Column:
+- Icon: Code brackets (48x48px, lime color)
+- Heading: "Web Applications & Sites" (48px)
+- Description (18px, leading relaxed):
+  "Custom web applications built with modern JavaScript frameworks (React, Next.js, Vue). We handle everything from UX design to deployment, creating responsive, accessible, and performant solutions.
+
+  Our development process emphasizes rapid iteration, continuous deployment, and real-world performance optimization. Every project includes automated testing, CI/CD pipelines, and comprehensive documentation."
+
+Right Column - What's Included:
+- Subheading: "What's Included" (24px, weight 600)
+- Checklist items (16px, with checkmark icons in lime):
+  • Technical architecture & database design
+  • UI/UX design & interactive prototypes
+  • Frontend & backend development
+  • RESTful or GraphQL API development
+  • Authentication & authorization systems
+  • Payment gateway integration
+  • Cloud hosting & deployment (AWS, Vercel, etc.)
+  • SSL certificates & security hardening
+  • Performance optimization & SEO
+  • 30-day post-launch support
+
+Bottom Row - Tech Stack Pills:
+- Small rounded pills (24px height, border 1px #CECECE, padding 8px 12px):
+  React • Next.js • TypeScript • Node.js • Python • PostgreSQL • MongoDB • Redis • Docker • AWS
+
+Service 2: AI & Automation
+Layout:
+- Padding: 96px vertical
+- Background: White
+- Border top/bottom: 1px solid #CECECE
+- 2-column grid (40/60 split, reversed on mobile)
+
+Left Column - Use Cases:
+- Subheading: "Use Cases" (24px)
+- Cards (border 1px #CECECE, padding 24px, gap 16px):
+  1. "Customer Support Automation"
+     - Small description about AI chatbots reducing response times
+  2. "Document Processing"
+     - Small description about OCR and intelligent extraction
+  3. "Workflow Automation"
+     - Small description about eliminating manual tasks
+  4. "Predictive Analytics"
+     - Small description about forecasting and insights
+
+Right Column:
+- Icon: Sparkles/AI chip (48x48px, lime)
+- Heading: "AI & Automation" (48px)
+- Description (18px):
+  "Integrate AI into your business workflows to reduce costs, improve accuracy, and accelerate operations. We specialize in RAG (Retrieval-Augmented Generation) systems that combine your proprietary data with large language models.
+
+  Our automation solutions include workflow engines, intelligent document processing, and custom ML models. We focus on practical, ROI-driven implementations with clear success metrics."
+
+- Tech mentions: OpenAI GPT-4, Claude, LangChain, Pinecone, Python, FastAPI, Celery
+
+Service 3: Data Engineering
+Layout:
+- Padding: 96px vertical
+- Background: Black
+- Color: White
+- 2-column grid (50/50 split)
+
+Left Column:
+- Icon: Database/server (48x48px, lime)
+- Heading: "Data Engineering" (48px, white)
+- Description (18px, rgba(255,255,255,0.9))
+
+Right Column:
+- Architecture diagram (simplified visual representation):
+  Data Sources → ETL Pipeline → Data Warehouse → Analytics Layer → Visualization
+  (Show with simple boxes, arrows, and labels)
+
+Bottom Full Width - Deliverables grid (3 columns):
+1. "Data Pipeline Architecture"
+2. "Real-Time Processing"
+3. "Analytics & BI Dashboards"
+
+PROCESS SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: White
+- Border top: 1px solid #CECECE
+
+Content:
+- Label: "HOW WE WORK"
+- Heading: "From Concept to Launch in 4-6 Weeks" (48px, centered)
+- Timeline visual with 4 steps (horizontal on desktop, vertical on mobile)
+
+Steps (connected by line/arrow):
+1. Week 1: "Discovery & Scope"
+   - Icon: Magnifying glass
+   - Details about requirements gathering, technical assessment, proposal
+
+2. Week 1-2: "Design & Architecture"
+   - Icon: Layers/blueprint
+   - Details about wireframes, prototypes, tech stack decisions
+
+3. Week 2-4: "Development & Testing"
+   - Icon: Code
+   - Details about sprint-based development, weekly demos
+
+4. Week 4-6: "Launch & Support"
+   - Icon: Rocket
+   - Details about deployment, monitoring, 30-day support
+
+PRICING SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: Off-white
+- Border top: 1px solid #CECECE
+
+Content:
+- Label: "TRANSPARENT PRICING"
+- Heading: "Fixed-Price Projects" (48px, centered)
+- Subheading: "Clear proposals with defined scope, timeline, and deliverables. No hourly billing, no surprises."
+
+Pricing Cards (3 columns):
+1. "Starter"
+   - "From €8,000"
+   - Best for: Landing pages, MVP applications
+   - Timeline: 2-3 weeks
+   - Includes: Basic features, responsive design, deployment
+   - Button: "Get Quote →"
+
+2. "Professional" (Highlighted with border)
+   - "From €15,000"
+   - Best for: Full web apps, automation systems
+   - Timeline: 4-6 weeks
+   - Includes: Advanced features, integrations, 30-day support
+   - Button: "Get Quote →" (primary lime)
+
+3. "Enterprise"
+   - "Custom"
+   - Best for: Complex platforms, data engineering
+   - Timeline: 6-12 weeks
+   - Includes: Custom architecture, dedicated support, SLA
+   - Button: "Contact Sales →"
+
+CTA SECTION: Same as homepage
+FOOTER: Same as homepage
+
+=== PAGE 3: WORK/PORTFOLIO ===
+
+HEADER: Same as homepage
+
+HERO SECTION:
+Layout:
+- Padding: 160px top, 64px bottom
+- Background: White
+- Border bottom: 1px solid #CECECE
+
+Content:
+- Breadcrumb: "Home / Work"
+- Label: "CASE STUDIES"
+- Headline: "Real Projects, Measurable Results" (72px)
+- Subheadline: "See how we've helped businesses transform operations, increase revenue, and scale efficiently." (20px, #666)
+
+Filters:
+- Pills: "All", "Web Apps", "AI/Automation", "Data Engineering" (toggleable, active state: black bg white text)
+
+PORTFOLIO GRID:
+
+Layout:
+- Padding: 64px vertical
+- Background: Off-white
+- 2-column grid desktop, 1 mobile
+- Gap: 32px
+
+Project Card Structure (repeated):
+- Aspect ratio: 16:9 thumbnail image area (use placeholder with geometric pattern or gradient)
+- Border: 1px solid #CECECE
+- Background: White
+- Padding: 32px below image
+- Hover: Lift effect, border changes to black
+
+6 Project Cards:
+
+1. "Hotel Booking Platform"
+   - Thumbnail: Gradient from lime to blue-gray
+   - Category tag: "WEB APPLICATION" (monospace 11px, uppercase)
+   - Title: "Hotel Booking Platform" (32px)
+   - Stat: "+32%" (large, lime) "increase in bookings"
+   - Metrics row: "5 weeks" | "React + Node.js" | "€18,000"
+   - Description: "Complete rebuild of legacy booking system with real-time availability, payment processing, and customer portal."
+   - Link: "View Case Study →"
+
+2. "B2B SaaS Website Redesign"
+   - Thumbnail: Dark gradient
+   - Category: "WEB DESIGN & DEV"
+   - Title: "B2B SaaS Website Redesign"
+   - Stat: "+48%" "form conversions"
+   - Metrics: "3 weeks" | "Next.js + Tailwind" | "€12,000"
+   - Description: "Modern rebrand with focus on conversion optimization, SEO, and lead generation."
+   - Link: "View Case Study →"
+
+3. "AI Knowledge Assistant"
+   - Thumbnail: Lime to black gradient
+   - Category: "AI & AUTOMATION"
+   - Title: "AI Knowledge Assistant"
+   - Stat: "−40%" "customer support time"
+   - Metrics: "4 weeks" | "RAG + GPT-4" | "€22,000"
+   - Description: "Internal knowledge base powered by AI to automatically answer employee questions from company documentation."
+   - Link: "View Case Study →"
+
+4. "E-commerce Analytics Dashboard"
+   - Thumbnail: Blue-gray gradient
+   - Category: "DATA ENGINEERING"
+   - Title: "E-commerce Analytics Dashboard"
+   - Stat: "Real-time" "insights"
+   - Metrics: "6 weeks" | "Python + PostgreSQL" | "€25,000"
+   - Description: "ETL pipeline and analytics dashboard processing 1M+ daily transactions with custom BI reports."
+   - Link: "View Case Study →"
+
+5. "Document Processing Automation"
+   - Thumbnail: Geometric pattern
+   - Category: "AI & AUTOMATION"
+   - Title: "Document Processing Automation"
+   - Stat: "−70%" "processing time"
+   - Metrics: "5 weeks" | "OCR + NLP" | "€20,000"
+   - Description: "Automated invoice processing system using computer vision and intelligent extraction."
+   - Link: "View Case Study →"
+
+6. "Supply Chain Management App"
+   - Thumbnail: Dark to lime gradient
+   - Category: "WEB APPLICATION"
+   - Title: "Supply Chain Management App"
+   - Stat: "3x" "operational efficiency"
+   - Metrics: "8 weeks" | "React + Python" | "€32,000"
+   - Description: "Custom logistics platform with inventory tracking, order management, and supplier integration."
+   - Link: "View Case Study →"
+
+TESTIMONIALS SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: Black
+- Color: White
+
+Content:
+- Heading: "What Our Clients Say" (48px, centered, white)
+- 3-column grid of testimonials
+
+Each testimonial card:
+- Border: 1px solid rgba(255,255,255,0.2)
+- Padding: 40px
+- Star rating: "★★★★★" (lime color)
+- Quote: "..." (20px, italic)
+- Author name: (16px, weight 600)
+- Title/Company: (14px, rgba(255,255,255,0.6))
+- Profile image: Circular, 56px diameter (use colored placeholder)
+
+3 Testimonials (create realistic client quotes about quality, speed, ROI)
+
+CTA SECTION: Same as homepage
+FOOTER: Same as homepage
+
+=== PAGE 4: ABOUT ===
+
+HEADER: Same as homepage
+
+HERO SECTION:
+Layout:
+- Padding: 160px top, 96px bottom
+- Background: White
+- Border bottom: 1px solid #CECECE
+
+Content:
+- Breadcrumb: "Home / About"
+- Label: "ABOUT US"
+- Headline: "Built by Developers, For Businesses" (72px)
+- Subheadline: "We're a technical team passionate about solving real business problems with elegant code and practical AI solutions." (20px, max-width 800px)
+
+STORY SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: Off-white
+- 2-column grid (60/40 split)
+
+Left Column:
+- Subheading: "Our Story" (14px uppercase monospace, #666)
+- Heading: "Technology Meets Business Impact" (40px)
+- Body paragraphs (18px, line-height 1.7):
+  "Data2Business was founded on a simple principle: modern businesses shouldn't be held back by outdated technology or slow development cycles.
+
+  We've worked with startups, SMBs, and enterprise clients across industries—from hospitality to logistics to professional services. What they all share is a need for reliable technical partners who understand both code and business outcomes.
+
+  Today, we specialize in rapid development of web applications, intelligent automation systems, and data engineering solutions that deliver measurable ROI."
+
+Right Column:
+- Stats cards (stacked, border 1px #CECECE, padding 32px):
+  "15+" - "Projects Delivered"
+  "4.2 weeks" - "Average Launch Time"
+  "€500K+" - "Revenue Generated for Clients"
+  "99.9%" - "Uptime SLA"
+
+TEAM SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: White
+- Border top: 1px solid #CECECE
+
+Content:
+- Subheading: "THE TEAM" (uppercase monospace)
+- Heading: "Specialized Expertise" (48px)
+- Description: "Small team, big capabilities. We bring together full-stack development, AI engineering, and data architecture expertise."
+
+Team Grid (3 columns):
+Each card:
+- Border: 1px solid #CECECE
+- Padding: 32px
+- Profile image placeholder: Square, 200x200px (geometric pattern or solid color)
+- Name: (24px, weight 600)
+- Role: (14px, monospace, #666)
+- Bio: 2-3 sentences about expertise
+- Skills pills: Technologies they specialize in
+
+3 Team Members:
+1. Lead Developer
+   - Specialties: Full-stack development, system architecture
+   - Skills: React, Node.js, TypeScript, AWS
+
+2. AI Engineer
+   - Specialties: ML models, automation systems, NLP
+   - Skills: Python, LangChain, OpenAI, TensorFlow
+
+3. Data Engineer
+   - Specialties: ETL pipelines, data warehousing, analytics
+   - Skills: PostgreSQL, Apache Airflow, dbt, Tableau
+
+VALUES SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: Lime (#D4FF00)
+
+Content:
+- Heading: "How We Work" (48px, centered)
+- 4-column grid (2 on tablet, 1 on mobile)
+
+4 Value Cards:
+1. Icon: Target - "Results-Driven"
+   - "We measure success by business outcomes, not lines of code."
+
+2. Icon: Clock - "Rapid Delivery"
+   - "Ship MVPs in weeks, not months. Iterate based on real user feedback."
+
+3. Icon: Shield - "Security First"
+   - "Enterprise-grade security practices on every project, every time."
+
+4. Icon: Message - "Transparent Communication"
+   - "Weekly demos, clear documentation, honest timelines."
+
+TECH STACK SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: Black
+- Color: White
+
+Content:
+- Heading: "Our Tech Stack" (48px, centered, white)
+- Subheading: "Modern tools for modern problems" (18px, centered, rgba(255,255,255,0.7))
+
+Tech Categories (4 columns):
+1. "Frontend"
+   - React, Next.js, TypeScript, Tailwind CSS, Framer Motion
+
+2. "Backend"
+   - Node.js, Python, FastAPI, PostgreSQL, Redis
+
+3. "AI/ML"
+   - OpenAI, LangChain, Pinecone, Hugging Face, TensorFlow
+
+4. "Infrastructure"
+   - AWS, Docker, Vercel, GitHub Actions, Cloudflare
+
+Display as organized lists with subtle dividers
+
+CTA SECTION: Same as homepage
+FOOTER: Same as homepage
+
+=== PAGE 5: CONTACT ===
+
+HEADER: Same as homepage
+
+HERO SECTION:
+Layout:
+- Padding: 160px top, 64px bottom
+- Background: White
+- Border bottom: 1px solid #CECECE
+
+Content:
+- Breadcrumb: "Home / Contact"
+- Label: "GET IN TOUCH"
+- Headline: "Let's Build Something Great Together" (72px)
+- Subheadline: "Tell us about your project and we'll send you a detailed proposal within 48 hours. No obligations, no sales pressure." (20px, max-width 800px)
+
+CONTACT SECTION:
+Layout:
+- Padding: 96px vertical
+- Background: Off-white
+- 2-column grid (55/45 split, stack on mobile)
+
+Left Column - Contact Form:
+Form fields (all with border 1px #CECECE, padding 16px, background white):
+- Name (text input)
+- Email (email input)
+- Company (text input, optional)
+- Project Type (dropdown: Web Application, AI/Automation, Data Engineering, Other)
+- Budget Range (dropdown: €5K-10K, €10K-20K, €20K-50K, €50K+, Not sure)
+- Project Description (textarea, 4 rows)
+- Timeline (dropdown: ASAP, 1-3 months, 3-6 months, 6+ months, Flexible)
+- Checkbox: "I agree to the privacy policy"
+- Submit button: "Send Message →" (primary lime button, full width)
+
+Form style notes:
+- Label above each field (12px uppercase monospace, #666)
+- Focus state: Border changes to black
+- Error state: Border red, helper text below
+
+Right Column - Contact Info:
+
+Contact Cards (stacked, border 1px #CECECE, padding 32px, background white):
+
+1. "Email Us"
+   - Icon: Mail envelope (24x24px)
+   - Email: hello@data2business.com
+   - Response time: "Within 24 hours"
+
+2. "Schedule a Call"
+   - Icon: Calendar (24x24px)
+   - Button: "Book 30-min Consultation →"
+   - Availability: "Mon-Fri, 9AM-5PM CET"
+
+3. "Location"
+   - Icon: Map pin (24x24px)
+   - Text: "Remote-first team"
+   - Serving: "EU & US clients"
+
+FAQ Accordion Section:
+- Below contact cards
+- Background: White
+- 5-7 common questions:
+  "How long does a typical project take?"
+  "Do you work with startups?"
+  "What's included in post-launch support?"
+  "Can you work with our existing tech stack?"
+  "Do you offer maintenance plans?"
+
+Each question expandable, answer hidden by default
+
+OFFICE HOURS SECTION:
+Layout:
+- Padding: 64px vertical
+- Background: Black
+- Color: White
+- Centered content
+
+Content:
+- Small heading: "Need Quick Advice?" (24px)
+- Large text: "Book a free 15-minute consultation" (40px)
+- Button: "Schedule Call →" (primary lime)
+
+FOOTER: Same as homepage
+
+=== GENERAL DESIGN NOTES ===
+
+RESPONSIVE BEHAVIOR:
+- Desktop: 1400px max-width container
+- Tablet: 768px-1024px (2-column grids become 1-2 columns)
+- Mobile: <768px (all grids become single column, reduce font sizes by 20-30%)
+- Maintain 24px horizontal padding on mobile
+
+INTERACTIONS & ANIMATIONS:
+- All transitions: 300ms cubic-bezier(0.4, 0, 0.2, 1)
+- Button hovers: Background and text color change
+- Card hovers: Subtle lift (translateY -4px) and shadow
+- Link hovers: Color change to lime
+- Smooth scroll behavior for anchor links
+- Fade-in animations on scroll for section content (subtle, fast)
+
+ACCESSIBILITY:
+- All interactive elements keyboard accessible
+- Focus states: 2px outline in lime or black
+- Alt text for all icons and images
+- ARIA labels for icon buttons
+- Sufficient color contrast (WCAG AA minimum)
+- Form validation messages clearly visible
+
+TECHNICAL IMPLEMENTATION PREFERENCES:
+- Use semantic HTML5 elements (header, nav, section, article, footer)
+- CSS Grid for layouts, Flexbox for components
+- Mobile-first responsive approach
+- Optimize for performance (lazy loading, efficient CSS)
+- Clean, organized code structure
+
+=== CONTENT TONE ===
+- Professional but approachable
+- Technical but not jargon-heavy
+- Results-focused and specific (use numbers, metrics)
+- Confident without being arrogant
+- Action-oriented CTAs
+
+This prompt should generate a complete, cohesive 5-page website with consistent visual identity, professional polish, and technical precision. The design emphasizes clarity, performance, and business value.

@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "services": "Serviços",
+    "work": "Portfólio",
+    "reviews": "Avaliações",
+    "blog": "Blog",
+    "contact": "Contato"
+  },
+  "buttons": {
+    "bookCall": "Agendar conversa de 20 min",
+    "getStarted": "Começar",
+    "learnMore": "Saiba mais",
+    "seeWork": "Ver trabalhos",
+    "seeDemo": "Ver demonstração ao vivo",
+    "startProject": "Iniciar seu projeto",
+    "readMore": "Ler mais",
+    "viewAll": "Ver todos",
+    "getEstimate": "Obter orçamento"
+  },
+  "footer": {
+    "tagline": "Construa o que importa. Automatize o resto.",
+    "services": "Serviços",
+    "company": "Empresa",
+    "legal": "Legal",
+    "webApps": "Aplicativos Web e Sites",
+    "automation": "Automação e IA",
+    "work": "Portfólio",
+    "reviews": "Avaliações",
+    "blog": "Blog",
+    "contact": "Contato",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "rights": "Todos os direitos reservados."
+  }
+}

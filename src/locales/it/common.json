@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "services": "Servizi",
+    "work": "Lavori",
+    "reviews": "Recensioni",
+    "blog": "Blog",
+    "contact": "Contatto"
+  },
+  "buttons": {
+    "bookCall": "Prenota una chiamata di 20 min",
+    "getStarted": "Inizia",
+    "learnMore": "Scopri di più",
+    "seeWork": "Vedi esempi di lavoro",
+    "seeDemo": "Vedi una demo dal vivo",
+    "startProject": "Inizia il tuo progetto",
+    "readMore": "Leggi di più",
+    "viewAll": "Vedi tutti",
+    "getEstimate": "Ottieni un preventivo"
+  },
+  "footer": {
+    "tagline": "Costruisci ciò che conta. Automatizza il resto.",
+    "services": "Servizi",
+    "company": "Azienda",
+    "legal": "Legale",
+    "webApps": "App Web e Siti",
+    "automation": "Automazione e IA",
+    "work": "Lavori",
+    "reviews": "Recensioni",
+    "blog": "Blog",
+    "contact": "Contatto",
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "rights": "Tutti i diritti riservati."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "title": "Clients stay because results do.",
+    "rating": "5.0",
+    "subtitle": "Based on 6 completed projects • Average launch: 4.2 weeks"
+  },
+  "allReviews": {
+    "title": "All Reviews",
+    "subtitle": "Hear from businesses we've helped transform"
+  },
+  "stats": {
+    "satisfaction": {
+      "metric": "100%",
+      "label": "Client satisfaction"
+    },
+    "delivery": {
+      "metric": "4.2wks",
+      "label": "Average delivery"
+    },
+    "projects": {
+      "metric": "6",
+      "label": "Projects completed"
+    }
+  },
+  "cta": {
+    "title": "Join our satisfied clients",
+    "subtitle": "Let's discuss your project and see how we can help you achieve similar results."
+  }
+}

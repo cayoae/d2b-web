@@ -1,0 +1,8 @@
+# WordPress to new site redirects - UPDATE THESE BASED ON YOUR ACTUAL WORDPRESS URLs
+/about-us /contact 301
+/services /services/web-apps-sites 301
+/portfolio /work 301
+/contact-us /contact 301
+
+# SPA fallback
+/* /index.html 200
