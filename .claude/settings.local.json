@@ -4,7 +4,11 @@
       "Bash(npm run dev:*)",
       "Read(//c/Users/cayoa/Downloads/**)",
       "Bash(python:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh:*)",
+      "Bash(git push:*)",
+      "Bash(npm view:*)"
     ],
     "deny": [],
     "ask": []

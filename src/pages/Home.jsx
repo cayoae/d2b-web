@@ -404,19 +404,40 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: 'Booking app', metric: '+32%', label: 'bookings', time: '5 weeks', color: 'lime' },
+              {
+                title: 'Stats Pro - Sports Analytics',
+                metric: '+47%',
+                label: 'visitor growth',
+                time: '4 weeks',
+                color: 'lime',
+                url: 'https://statspro.bio',
+                description: 'Transformed static page into dynamic platform with daily games, deep analysis links, and 20+ leagues coverage'
+              },
               { title: 'B2B site refresh', metric: '+48%', label: 'form fills', time: '3 weeks', color: 'accent' },
               { title: 'AI knowledge assistant', metric: '−40%', label: 'handling time', time: '4 weeks', color: 'forest' },
             ].map((project, i) => (
               <motion.div key={i} {...fadeInUp} transition={{ delay: i * 0.1 }}>
-                <Link to="/work" className="block group">
+                <Link to={project.url || "/work"} target={project.url ? "_blank" : undefined} rel={project.url ? "noopener noreferrer" : undefined} className="block group">
                   <Card hover={true} className="h-full">
-                    <div className="aspect-video bg-gradient-to-br from-lime-50 to-forest-50 rounded-xl mb-4 flex items-center justify-center text-forest/30 group-hover:text-forest/40 transition-colors">
-                      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
+                    <div className="aspect-video bg-gradient-to-br from-lime-50 to-forest-50 rounded-xl mb-4 overflow-hidden relative">
+                      {i === 0 && project.url ? (
+                        <img
+                          src="/statspro-hero.png"
+                          alt={project.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-forest/30 group-hover:text-forest/40 transition-colors">
+                          <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        </div>
+                      )}
                     </div>
                     <h4 className="font-bold mb-3 group-hover:text-accent transition-colors">{project.title}</h4>
+                    {project.description && (
+                      <p className="text-sm text-forest/70 mb-3 line-clamp-2">{project.description}</p>
+                    )}
                     <div className="flex items-baseline gap-2 mb-1">
                       <span className={`text-3xl font-bold text-${project.color}`}>{project.metric}</span>
                       <span className="text-sm text-forest/60">{project.label}</span>
