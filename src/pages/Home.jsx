@@ -212,27 +212,6 @@ export default function Home() {
                       {t('hero.ctaSecondary')}
                     </Button>
                   </motion.div>
-
-                  {/* Quick stats */}
-                  <motion.div
-                    className="mt-12 flex gap-8"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.7 }}
-                  >
-                    <div>
-                      <div className="text-h2 font-bold text-lime">{t('hero.stats.launch.value')}</div>
-                      <div className="text-sm text-forest/60">{t('hero.stats.launch.label')}</div>
-                    </div>
-                    <div>
-                      <div className="text-h2 font-bold text-lime">{t('hero.stats.uptime.value')}</div>
-                      <div className="text-sm text-forest/60">{t('hero.stats.uptime.label')}</div>
-                    </div>
-                    <div>
-                      <div className="text-h2 font-bold text-lime">{t('hero.stats.rating.value')}</div>
-                      <div className="text-sm text-forest/60">{t('hero.stats.rating.label')}</div>
-                    </div>
-                  </motion.div>
                 </div>
               </div>
             </motion.div>
